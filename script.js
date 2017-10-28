@@ -10,8 +10,8 @@ for (var i = 0; i < images.length; i++) {
     images[i].src = "http://i.dailymail.co.uk/i/pix/2016/08/09/16/2DEB07D800000578-3729527-image-a-1_1470756752507.jpg"
   } else if (i === 3) {
     images[i].src = "https://pbs.twimg.com/profile_images/570756134315642880/c1we-r1P_400x400.png"
-  } else {
-    images[i].src = "https://usatftw.files.wordpress.com/2017/01/usatsi_9812072-copy.jpg?w=1000&h=600&crop=1"
+  // } else {
+  //   images[i].src = "https://usatftw.files.wordpress.com/2017/01/usatsi_9812072-copy.jpg?w=1000&h=600&crop=1"
   }
 
 }
@@ -45,3 +45,76 @@ for(var i = 0; i < paragraph.length; i++){
     paragraph[i].innerHTML = "the best qb is back";
   }
 }
+
+var rand =  Math.floor(Math.random() * 3);
+var title = document.querySelectorAll("h1");
+var subtitle = document.querySelectorAll("h2");
+var paragraph = document.querySelectorAll("p");
+var images = document.querySelectorAll("img");
+var buttons = document.querySelectorAll("button");
+if (rand === 0) {
+  for(var i = 0; i < paragraph.length; i++){
+    paragraph[i].innerHTML = "kanye west 100/100";
+  }
+  for (var i = 0; i < images.length; i++) {
+    images[i].src = "http://northamarillonow.co/wp2/wp-content/uploads/2016/11/maxresdefault.jpg";
+  }
+  for(var i = 0; i < title.length; i++){
+    title[i].innerHTML = "Kanye West appointed president for 2020";
+  }
+  for(var i = 0; i < subtitle.length; i++){
+    subtitle[i].innerHTML = "don't worry this is fake news";
+  } 
+  for(var i = 0; i < buttons.length; i++) {
+    buttons[i].innerHTML = "CLICK HERE TO DO STUFF";
+  }
+} else if (rand === 1) {
+  for(var i = 0; i < paragraph.length; i++){
+    paragraph[i].innerHTML = "america is in danger";
+  }
+  for (var i = 0; i < images.length; i++) {
+    images[i].src = "http://cdn.cnn.com/cnnnext/dam/assets/160624180431-north-korea-missile-launch-kim-jong-un-we-can-hit-us-dnt-tsr-00002920-full-169.jpg";
+  }
+  for(var i = 0; i < title.length; i++){
+    title[i].innerHTML = "North Korean launches ballistic missile at U.S.";
+  }
+  for(var i = 0; i < subtitle.length; i++){
+    subtitle[i].innerHTML = "don't worry this is fake news";
+  }
+  for(var i = 0; i < buttons.length; i++) {
+    buttons[i].innerHTML = "CLICK HERE TO DO STUFF";
+  }
+} else if (rand === 2) {
+  for(var i = 0; i < paragraph.length; i++){
+    paragraph[i].innerHTML = "Are you affected? Go to www.thisisnotavirus.com to check the list of names of affected persons. Make sure to enter your social security number and give as all your info";
+  }
+  for (var i = 0; i < images.length; i++) {
+    images[i].src = "http://i.dailymail.co.uk/i/pix/2016/08/09/16/2DEB07D800000578-3729527-image-a-1_1470756752507.jpg";
+  }
+  for(var i = 0; i < title.length; i++){
+    title[i].innerHTML = "Facebook hacked, millions of SSIDs stolen";
+  }
+  for(var i = 0; i < subtitle.length; i++){
+    subtitle[i].innerHTML = "don't worry this is fake news";
+  }
+  for(var i = 0; i < buttons.length; i++) {
+    buttons[i].innerHTML = "CLICK HERE TO DO STUFF";
+  }
+} else if (rand === 3) {
+  for(var i = 0; i < paragraph.length; i++){
+    paragraph[i].innerHTML = "Are you affected? Go to www.thisisnotavirus.com to check the list of names of affected persons. Make sure to enter your social security number and give as all your info";
+  }
+  for (var i = 0; i < images.length; i++) {
+    images[i].src = "https://pbs.twimg.com/profile_images/570756134315642880/c1we-r1P_400x400.png";
+  }
+  for(var i = 0; i < title.length; i++){
+    title[i].innerHTML = "Facebook hacked, millions of SSIDs stolen";
+  }
+  for(var i = 0; i < subtitle.length; i++){
+    subtitle[i].innerHTML = "don't worry this is fake news";
+  }
+  for(var i = 0; i < buttons.length; i++) {
+    buttons[i].innerHTML = "CLICK HERE TO DO STUFF";
+  }
+}
+
